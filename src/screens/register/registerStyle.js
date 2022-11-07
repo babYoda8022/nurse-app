@@ -5,14 +5,27 @@ export const RegisterStyle = StyleSheet.create({
         height:"100%",
         backgroundColor:"#65D6AD",
     },
+    icon:{
+        paddingTop: 35,
+        fontSize: 40,
+        color:"#0C008C",
+    },
+    txt:{
+        color:"#0C008C",
+        fontSize: 25,
+    },
     box1:{
-        padding: 25,
+        marginTop: 100,
+        alignItems:"center"
     },
     box2:{
+        padding: 25,
+    },
+    box3:{
         flexDirection: "row",
         justifyContent:"space-between",
     },
-    box3:{
+    box4:{
         flex: 1,
         flexDirection: "row",
         justifyContent:"space-between",

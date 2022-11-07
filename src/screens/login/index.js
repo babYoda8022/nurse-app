@@ -16,7 +16,7 @@ export function Login( { navigation } ){
                     placeholder="Login"  
                     style={LoginStyle.txtInput}/>
                 <Text style={LoginStyle.txtLink1}>Esqueci minha senha</Text>
-                <TouchableOpacity style={LoginStyle.btn1}>
+                <TouchableOpacity style={LoginStyle.btn1} onPress={()=>{navigation.navigate("Sistem")}}>
                     <Text style={LoginStyle.txt1}>Entrar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={LoginStyle.btn2} onPress={()=>{navigation.navigate("Register")}}>

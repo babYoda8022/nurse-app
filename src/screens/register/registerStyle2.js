@@ -6,13 +6,26 @@ export const RegisterStyle2 = StyleSheet.create({
         backgroundColor:"#9FB3C8",
     },
     box1:{
-        padding: 25,
+        marginTop: 140,
+        alignItems:"center"
     },
     box2:{
+        padding: 25,
+    },
+    box3:{
         flex: 1,
         flexDirection: "row",
         justifyContent:"space-between",
         alignItems: "flex-end"
+    },
+    icon:{
+        fontSize: 50,
+        marginBottom: 10,
+        color:"#0C008C",
+    },
+    txt:{
+        color:"#0C008C",
+        fontSize: 28,
     },
     txtInput:{
         width:"100%",

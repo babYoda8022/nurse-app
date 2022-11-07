@@ -4,26 +4,31 @@ import { Login } from "../screens/login";
 import { Register } from "../screens/register";
 import { Register2 } from "../screens/register/register2";
 
-const { Screen, Navigator } = createNativeStackNavigator()
+import { Sistem } from "./sistem.routes";
 
-export function Router(){
-    return(
-        <Navigator 
-        screenOptions={{
-            headerShown: false
-        }}>
-            <Screen 
+const { Screen, Navigator} = createNativeStackNavigator()
+
+export function Router() {
+    return (
+        <Navigator screenOptions={{ headerShown: false }}>
+
+            <Screen
                 name="Login"
-                component={Login}
+                component={ Login }
             />
-            <Screen 
+            <Screen
                 name="Register"
-                component={Register}
+                component={ Register }
             />
-            <Screen 
+            <Screen
                 name="Register2"
-                component={Register2}
+                component={ Register2 }
             />
+            <Screen
+                name="Sistem"
+                component={ Sistem }
+            />
+            
         </Navigator>
     )
 }
