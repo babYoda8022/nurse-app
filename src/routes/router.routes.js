@@ -1,17 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+const { Screen, Navigator} = createNativeStackNavigator()
 
 import { Login } from "../screens/login";
 import { Register } from "../screens/register";
 import { Register2 } from "../screens/register/register2";
-
-import { Sistem } from "./sistem.routes";
-
-const { Screen, Navigator} = createNativeStackNavigator()
+import { SistemHome } from "../screens/sistem";
+import { Header } from "../components/header";
 
 export function Router() {
     return (
         <Navigator screenOptions={{ headerShown: false }}>
-
             <Screen
                 name="Login"
                 component={ Login }
@@ -25,10 +23,13 @@ export function Router() {
                 component={ Register2 }
             />
             <Screen
-                name="Sistem"
-                component={ Sistem }
+                name="SistemHome"
+                component={ SistemHome }
             />
-            
+            <Screen
+                name="Header"
+                component={ Header }
+            />
         </Navigator>
     )
 }

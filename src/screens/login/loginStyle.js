@@ -15,8 +15,11 @@ export const LoginStyle = StyleSheet.create({
         alignItems:"center"
     },
     img:{
-        marginTop: 20,
-        marginRight: 20,
+        marginTop: 60,
+        marginBottom: 25,
+        marginRight: 30,
+        height: 100,
+        width: 310
     },
     txtInput:{
         width:"100%",
