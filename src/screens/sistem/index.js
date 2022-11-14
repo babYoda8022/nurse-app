@@ -6,7 +6,7 @@ import { SistemStyle } from "./sistemStyle";
 import { CardService } from "../../components/cardService";
 import { NavigationTabBar } from "../../components/navigationTabBar";
 
-import { dataIcons } from "../../data"
+import { dataScreens } from "../../data"
 
 export function SistemHome( { navigation } ){
 
@@ -25,14 +25,15 @@ export function SistemHome( { navigation } ){
                 <Text style={SistemStyle.txt}> Ou </Text>
                 <Text style={SistemStyle.txt}> Clique no serviço a baixo </Text>
             </View>
-            
             <View style={SistemStyle.box3}>    
                 <FlatList
-                data={dataIcons}
+                data={dataScreens}
                 keyExtractor={itens=> itens.content}
                 numColumns={2}
                 renderItem={(itens)=>(
-                    <CardService object={itens.item}/>
+                    <TouchableOpacity onPress={()=>{navigation.navigate(itens.item.screen)}}>
+                        <CardService object={itens.item}/>
+                    </TouchableOpacity>
                 )}/>
             </View>
             <NavigationTabBar navigation={navigation}/>

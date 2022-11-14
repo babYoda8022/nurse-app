@@ -8,11 +8,14 @@ export function NavigationTabBar( { navigation } ){
     return(
         <View style={NavigationTabBarStyle.container}>
             <View style={NavigationTabBarStyle.box1}>
-                <TouchableOpacity style={NavigationTabBarStyle.homeIcon} onPress={()=>{navigation.navigate("SistemHome")}}>
+                <TouchableOpacity style={NavigationTabBarStyle.icon} onPress={()=>{navigation.navigate("SistemHome")}}>
                     <Icon name="home" style={[{fontSize: 35, color:"#0C008C"}]}/>
                 </TouchableOpacity>
-                <TouchableOpacity style={NavigationTabBarStyle.homeIcon} onPress={()=>{navigation.navigate("Header")}}>
-                    <Icon name="home" style={[{fontSize: 35, color:"#0C008C"}]}/>
+                <TouchableOpacity style={NavigationTabBarStyle.icon} onPress={()=>{navigation.navigate("")}}>
+                    <Icon name="search" style={[{fontSize: 35, color:"#0C008C"}]}/>
+                </TouchableOpacity>
+                <TouchableOpacity style={NavigationTabBarStyle.icon} onPress={()=>{navigation.navigate("")}}>
+                    <Icon name="question-circle-o" style={[{fontSize: 35, color:"#0C008C"}]}/>
                 </TouchableOpacity>
             </View>
         </View>

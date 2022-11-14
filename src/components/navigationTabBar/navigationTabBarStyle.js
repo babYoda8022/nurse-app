@@ -12,8 +12,11 @@ export const NavigationTabBarStyle = StyleSheet.create({
         marginTop: 13,
         width: "95%",
         height: 45,
+        flexDirection: "row",
+        justifyContent: "space-between"
     },
-    homeIcon:{
-        paddingLeft: 20,
+    icon:{
+        paddingLeft: 25,
+        paddingRight: 35
     }
 })

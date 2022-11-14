@@ -6,9 +6,7 @@ import  Icon  from "react-native-vector-icons/FontAwesome"
 import { HeaderStyle } from "./headerStyle";
 
 
-export function Header(list){
-
-    let contents = list.object
+export function Header(props){
     
     return(
         <View>
@@ -17,8 +15,8 @@ export function Header(list){
                 <Icon name="user" style={HeaderStyle.icon}/>
             </View>
             <View style={HeaderStyle.box2}>
-                <Image style={HeaderStyle.img} source={require("../../img/icons/icon6.png")}/>
-                <Text style={HeaderStyle.txt}> Curativos </Text>
+                <Image style={HeaderStyle.img} source={ props.require }/>
+                <Text style={HeaderStyle.txt}> { props.txt } </Text>
             </View>
         </View>
     )
